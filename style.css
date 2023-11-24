@@ -1,0 +1,95 @@
+#taskInput {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none; /* Supprime la bordure de focus par défaut */
+}
+.inputs{
+  display: flex;
+  align-items: center;
+}
+#ajoutTask{
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: green;
+  border: 1px solid green;
+
+  border-radius: 4px;
+  color: white;
+}
+
+/* Style lorsqu'il est focus */
+#taskInput:focus {
+  border-color: #2196f3; /* Couleur de la bordure lorsqu'il est focus */
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5); /* Ombre lorsqu'il est focus */
+}
+
+
+.task-manager{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#taskList{
+  margin-top: 2rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(78, 77, 77, 0.1);
+  width: 600px; /* Changer la largeur selon vos besoins */
+  margin-bottom:8px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.termineTache{
+  margin-right: 5px;
+}
+.nomTache {
+  font-size: 14px;
+}
+.tacheTerniner{
+  text-decoration: line-through;
+  color: grey;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+
+}
+
+.edit-button {
+  background-color: #2196f3;
+  color: white;
+  margin-right: 5px;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.desactiverBtn{
+  background-color: #ccc; /* Couleur grise pour indiquer que le bouton est désactivé */
+  color: #666; /* Couleur de texte grise */
+  cursor: not-allowed; /* Curseur indiquant qu'il n'est pas possible de cliquer */
+  pointer-events: none; /* Désactivation des événements de pointeur */
+  
+}
